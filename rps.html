@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <nav style="display: inline-block;" class ="title">
+            <h1  style="display: inline-block;">Rock Paper Scissor</h1> 
+            <div style="display: inline-block;">
+                <p style="display: inline-block;">Wins:</p>
+                <p id = "win" style="display: inline-block;">0</p> 
+            </div>
+            <div style="display: inline-block;" >
+                <p style="display: inline-block;">Loses:</p>
+                <p id = "lose" style="display: inline-block;">0</p> 
+            </div>
+            
+        </nav>
+        <div>
+            <img src="/rock_paper_scissors/images/lose.jpg" class="images" id = "resultImage">
+
+        </div>
+        <div  class = "center" style="inline-size: auto;" >
+            <h2 id = "result" style="display: inline-block;">Rock Paper Scissor</h2>
+        </div>
+        <div class = "center">
+            <button id = "Rock" onclick="PlayGame('Rock')">Rock</button>
+            <button id = "Scissor" onclick="PlayGame('Scissors')">Scissor</button>
+            <button id = "Paper" onclick="PlayGame('Paper')">Paper</button>
+            <button id = "Reset" onclick="Reset()">Reset Score</button>
+        </div>
+        <script src="rps.js" async defer></script>
+    </body>
+</html>
